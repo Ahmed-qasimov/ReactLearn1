@@ -1,0 +1,18 @@
+.image-list-container{
+    padding-top: 10px;
+    display: grid;
+    /* bu containerin bir qazete olduqunu belirtiyoruz
+    auto-fill-sayfanin gorunuluyunu avtomatik duzenler mes bir sayfaya 
+    bir sutun veya setire nece ing sigarsa onu yazdirir
+    minmax(300px 1 fr)-min 300px olacaq sekil , 1fr da her yerde qazetleri esit sekilde bol diyoruz satir ve sutunlar
+    */
+    grid-template-columns: repeat(auto-fill, minmax(300px 1 fr));
+    /*15px lik bir bosluq buraxiriq sekiller arasi ki bir birine yapismasin*/
+    grid-auto-rows: 5px;
+
+}
+
+.image-list-container img{
+    width: 300px;
+
+}
